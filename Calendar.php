@@ -48,19 +48,20 @@ echo"
         <td>Friday</td>
         <td>Saturday</td>
       </tr>
-    ";
+    ";s
 $day_counter= $blank;
-// Fills in the empty days if the month dose not start on a sunday    
+// Fills in the empty days if the month dose not start on a Sunday    
 while($blank > 0){
     echo"<td height=50></td>";
     $blank--;
 }
+// This is the numbers that are filled in to the calendar 
 $datecounter =1;
 while( $days_in_month >= $datecounter){
   echo"<td height=50> $datecounter</td>";
   $datecounter++;
   $day_counter++;
-  
+  // This wiil make it move down a row after hitting 7 days
     if($day_counter >= 7 ){
       echo"</tr><tr>";
       $day_counter=0;
