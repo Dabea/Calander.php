@@ -2,7 +2,7 @@ class MyClass
 {
   public $prop1 = "I'm a class property!";
  
-  puclic function setProperty($newval)
+  public function setProperty($newval)
   {
       $this->prop1 = $newval;
   }
@@ -16,4 +16,3 @@ class MyClass
 $obj = new MyClass;
  
 echo $obj->prop1;
- 
